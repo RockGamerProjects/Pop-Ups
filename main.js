@@ -11,4 +11,16 @@ if (confirm == true) {
     popUp.close()
   }
 }
-window.close()
+let hiddenDiv = document.querySelector('[place]')
+let content = hiddenDiv.innerHTML
+
+let times = 10
+let i = 0
+
+function addContent() {
+  if (i < times) {
+    hiddenDiv.innerHTML = hiddenDiv.innerHTML + content
+  }
+}
+
+setInterval(addContent, 1000);
