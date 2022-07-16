@@ -1,7 +1,7 @@
 let hiddenDiv = document.querySelector('[place]')
 let content = hiddenDiv.innerHTML
 
-let times = 10
+let times = 100
 let i = 0
 
 function addContent() {
